@@ -17,23 +17,25 @@ floating_modifier $super
 exec --no-startup-id xsettingsd &
 exec --no-startup-id pasystray
 exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id conky
-exec --no-startup-id conky -c ~/.config/conky/conky-shcts 
+# exec --no-startup-id conky
+# exec --no-startup-id conky -c ~/.config/conky/conky-shcts 
 exec --no-startup-id clipman
 exec --no-startup-id dunst
-exec --no-startup-id redshift
+# exec --no-startup-id redshift
 exec --no-startup-id desktop-items
 exec --no-startup-id nm-applet
-exec --no-startup-id pamac-tray
+# exec --no-startup-id pamac-tray
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xfce4-power-manager
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id setcursor
 #exec_always --no-startup-id ${HOME}/.config/polybar/launch.sh
-exec --no-startup-id ~/monitors.sh
+exec --no-startup-id ~/.monitors.sh
 exec_always --no-startup-id numlockx on
-exec blueberry-tray
-exec --no-startup-id java -Xmx1024m -jar "/opt/xdman/xdman.jar" -m
+# added --no-startup-id 
+# exec --no-startup-id blueberry-tray
+# exec --no-startup-id java -Xmx1024m -jar "/opt/xdman/xdman.jar" -m
+
 # start a terminal #alacritty
 bindsym $super+Return exec alacritty
 bindsym $super+t exec alacritty
@@ -208,6 +210,7 @@ bar {
     # Start tray icons on main monitor
 	status_command ~/.config/i3/bar.sh
     tray_output DP-2
+    position top
 
 	colors {
     background #1c1b1d
@@ -238,6 +241,10 @@ for_window [class="Garuda Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable sticky enable border normal
 for_window [class="zoom"] floating enable 
+for_window [title="Zoom Webinar"] floating enable 
+for_window [title="Zoom Meeting"] floating enable 
+for_window [title="NVIDIA X Server Settings"] floating enable
+for_window [class="ksnip"] floating enable 
 for_window [class="Oblogout"] fullscreen enable
 for_window [class="octopi"] floating enable
 for_window [title="About Pale Moon"] floating enable
@@ -246,13 +253,13 @@ for_window [class="Pamac-updater"] floating enable
 for_window [class="Pavucontrol"] floating enable
 for_window [class="Qtconfig-qt4"] floating enable border normal
 for_window [class="qt5ct"] floating enable sticky enable border normal
+# This is annoying and glitches the top background 
 # for_window [title="sudo"] floating enable border normal
 for_window [class="Simple-scan"] floating enable border normal
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="Timeshift-gtk"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
-for_window [class="albert"] border pixel 0
 
 # window rules, you can find the window class using xprop
 for_window [class=".*"] border pixel 4
@@ -289,12 +296,12 @@ gaps outer 2
 # gaps inner all set 10
 # gaps outer all plus 5
 
-# Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
-
-# Smart borders (draw borders around container only if it is not the only container on this workspace)
+# 1. Smart gaps (gaps used if only more than one container on the workspace)
+# 2. Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+
+# smart_gaps on
+# smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 set $mode_gaps Gaps: (o) outer, (i) inner

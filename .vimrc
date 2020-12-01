@@ -9,12 +9,18 @@ set hlsearch
 set ruler
 set noshowmode  
 set laststatus=2
+set encoding=utf-8
+set wildignorecase
+scriptencoding=utf-8
+set smartcase
+set incsearch hlsearch
 
 " misc
 set nobackup
 set clipboard=unnamedplus
 set noswapfile
 set noerrorbells
+
 " set ignorecase
 
 
@@ -33,7 +39,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-surround'
-Plug 'chrisbra/Colorizer'
+" Plug 'chrisbra/Colorizer'
 Plug 'turbio/bracey.vim'
 call plug#end()
 " *********************************** End *******************************
@@ -57,4 +63,4 @@ let g:python_highlight_space_errors = 0
 " hex ColorHighlight 
 
 " Set good system pasting
-vmap <C-c> "+y"
+" vmap <C-c> "+y"
