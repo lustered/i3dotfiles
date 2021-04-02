@@ -1,0 +1,34 @@
+{
+  "suggest.completionItemKindLabels": {
+    "text": "t",
+    "method": "m",
+    "function": ""
+  },
+  "diagnostic.errorSign": " ",
+  "diagnostic.warningSign": " ",
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": " ",
+  "list.indicator": ">",
+  "list.selectedSignText": " ",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "graphql",
+    "html",
+    "yaml",
+    "json"
+  ],
+  "coc.preferences.hoverTarget": "float",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.jediEnabled": false,
+  "java.home": "/home/topre/Downloads/installs/jdk-15.0.1/",
+
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "clangd.path": "/home/topre/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+  "java.format.settings.url": "/home/topre/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
+}
