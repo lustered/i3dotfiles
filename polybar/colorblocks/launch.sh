@@ -6,7 +6,7 @@ DIR="$HOME/.config/polybar/colorblocks"
 
 # Terminate already running bar instances
 killall -q polybar
-bash $HOME/.config/polybar/colorblocks/scripts/pywal.sh ~/Pictures/pinknmoon.jpg
+# bash $HOME/.config/polybar/colorblocks/scripts/pywal.sh ~/Pictures/pinknmoon.jpg
 
 # Wait until the processes have been shut down
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done

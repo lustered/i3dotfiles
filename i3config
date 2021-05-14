@@ -27,6 +27,7 @@ exec --no-startup-id xfce4-power-manager
 # exec_always --no-startup-id nitrogen --restore; sleep 1; picom -b
 # exec_always --no-startup-id nitrogen --restore; sleep 1; picom --config ~/.config/picom.conf -b --experimental-backends 
 exec_always --no-startup-id nitrogen --restore; sleep 1; picom --experimental-backends &
+exec_always --no-startup-id flameshot
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id setcursor
 exec_always --no-startup-id ~/dotfiles/monitors.sh
@@ -35,9 +36,11 @@ exec_always --no-startup-id mpd
 exec_always --no-startup-id ~/.config/polybar/colorblocks/launch.sh
 
 # start a terminal #kitty
-bindsym $super+Return exec --no-startup-id kitty
+# bindsym $super+Return exec --no-startup-id kitty
+bindsym $super+Return exec --no-startup-id alacritty
 bindsym $super+t exec --no-startup-id kitty tmux
-bindsym $super+Shift+Return exec --no-startup-id kitty
+# bindsym $super+Shift+Return exec --no-startup-id kitty
+# bindsym $super+Shift+Return exec --no-startup-id Alactritty
 
 # hide/unhide i3status bar
 bindsym $super+m bar mode toggle
@@ -213,6 +216,7 @@ bindsym $super+r mode "resize"
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="Calculator"] floating enable border pixel 1
 for_window [class="calamares"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [title="File Transfer*"] floating enable
@@ -326,4 +330,4 @@ mode "$mode_system" {
 #############################
 smart_borders on
 smart_borders no_gaps
-# border_radius 15
+border_radius 1

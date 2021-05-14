@@ -15,7 +15,7 @@ set ruler
 set noshowmode  
 set laststatus=2
 set wildignorecase
-set colorcolumn=90
+set colorcolumn=80
 set encoding=utf-8
 scriptencoding=utf-8
 set smartcase
@@ -44,7 +44,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'morhetz/gruvbox'
 " Plug 'tpope/vim-surround'
 " Plug 'mattn/emmet-vim'
-" Plug 'turbio/bracey.vim'
+Plug 'turbio/bracey.vim'
 " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'junegunn/vim-slash'
 Plug 'harenome/vim-mipssyntax'

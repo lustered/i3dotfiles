@@ -24,6 +24,16 @@
   "python.linting.pylintEnabled": true,
   "python.jediEnabled": false,
   "java.home": "/home/topre/Downloads/installs/jdk-15.0.1/",
+  "clangd.enabled": true,
+  "clangd.disableCompletion": false,
+  "clangd.semanticHighlighting": true,
+  "clangd.disableSnippetCompletion": false,
+  /* "languageserver": { */
+  /*   "clangd": { */
+  /*     "command": "clangd", */
+  /*     "filetypes": ["c", "cpp", "objc", "cuda", "arduino"] */
+  /*   } */
+  /* }, */
 
   "emmet.includeLanguages": {
     "vue-html": "html",
