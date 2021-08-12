@@ -34,11 +34,12 @@
   /*     "filetypes": ["c", "cpp", "objc", "cuda", "arduino"] */
   /*   } */
   /* }, */
-
+  "snippets.userSnippetsDirectory": "~/.config/coc/ultisnips",
   "emmet.includeLanguages": {
     "vue-html": "html",
-    "javascript": "javascriptreact"
+    "vue": "html"
+    /* "javascript": "javascriptreact" */
   },
-  "clangd.path": "/home/topre/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd",
+  "clangd.path": "/home/topre/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
   "java.format.settings.url": "/home/topre/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
 }

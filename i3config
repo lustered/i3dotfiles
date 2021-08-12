@@ -27,6 +27,7 @@ exec --no-startup-id xfce4-power-manager
 # exec_always --no-startup-id nitrogen --restore; sleep 1; picom -b
 # exec_always --no-startup-id nitrogen --restore; sleep 1; picom --config ~/.config/picom.conf -b --experimental-backends 
 exec_always --no-startup-id nitrogen --restore; sleep 1; picom --experimental-backends &
+# exec_always --no-startup-id nitrogen --restore; sleep 1; picom -CGb
 exec_always --no-startup-id flameshot
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id setcursor
@@ -250,7 +251,7 @@ for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
 
 # window rules, you can find the window class using xprop
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 3
 assign [class=URxvt] 1
 for_window [class=Viewnior|feh|Audacious|File-roller|Lxappearance|Lxtask|Pavucontrol] floating enable
 for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
@@ -269,8 +270,8 @@ client.background           #2f343f
 #############################
 
 # Set inner/outer gaps
-gaps inner 10
-gaps outer 20
+gaps inner 50
+gaps outer 10
 
 set $mode_gaps Gaps: (o) outer, (i) inner
 set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
@@ -328,6 +329,6 @@ mode "$mode_system" {
 #############################
 ##### rounded corners #######
 #############################
-smart_borders on
-smart_borders no_gaps
-border_radius 1
+# smart_borders on
+# smart_borders no_gaps
+# border_radius 1

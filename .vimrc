@@ -43,15 +43,15 @@ let g:python_highlight_space_errors = 0
 call plug#begin('~/.vim/plugged')
 " Plug 'morhetz/gruvbox'
 " Plug 'tpope/vim-surround'
-" Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim'
 Plug 'turbio/bracey.vim'
 " Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 " Plug 'junegunn/vim-slash'
-Plug 'harenome/vim-mipssyntax'
+" Plug 'harenome/vim-mipssyntax'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 Plug 'lifepillar/vim-gruvbox8'
-Plug 'dracula/vim', { 'as': 'dracula'  }
+" Plug 'dracula/vim', { 'as': 'dracula'  }
 Plug 'tpope/vim-commentary'
 Plug 'vim-python/python-syntax' 
 Plug 'jiangmiao/auto-pairs'
@@ -89,3 +89,14 @@ set scroll=10
 command! -nargs=0 Sw w !sudo tee % > /dev/null
 " Jump back to pos with ''
 nnoremap ' `
+
+filetype plugin on
+" Set single line comments for c style filetypes
+" autocmd FileType c,cpp,cs,java set commentstring=//\ %s
+autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
+
+
+" emmet 
+let g:user_emmet_mode='a'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
