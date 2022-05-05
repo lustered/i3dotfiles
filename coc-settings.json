@@ -21,7 +21,7 @@
   ],
   "coc.preferences.hoverTarget": "float",
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
+  "python.linting.pylintEnabled": false,
   "python.jediEnabled": false,
   "java.home": "/home/topre/Downloads/installs/jdk-15.0.1/",
   "clangd.enabled": true,
@@ -41,5 +41,7 @@
     /* "javascript": "javascriptreact" */
   },
   "clangd.path": "/home/topre/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd",
-  "java.format.settings.url": "/home/topre/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml"
+  "java.format.settings.url": "/home/topre/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+  "python.linting.pep8Enabled": true,
+  "python.formatting.provider": "black"
 }

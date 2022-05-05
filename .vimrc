@@ -58,6 +58,11 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'itchyny/lightline.vim'
 Plug 'mhinz/vim-startify'
 Plug 'RRethy/vim-hexokinase'
+Plug 'Yggdroot/indentLine'
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 call plug#end()
 " *********************************** End *******************************
 
