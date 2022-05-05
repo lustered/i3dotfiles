@@ -11,3 +11,5 @@ cp ~/dotfiles/monitors.sh .
 cp ~/dotfiles/tv.sh .
 cp ~/.vim/coc-vim.vim .
 cp ~/.vim/coc-settings.json .
+cp ~/.config/picom.conf .
+cp -r ~/.config/rofi/ .
